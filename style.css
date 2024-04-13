@@ -284,7 +284,7 @@ transform: translate(-50%, -50%);
 	border: none;
 	border-radius: 5px;
 	margin-top: 10px;
-	margin-left: 422px;
+	margin-left: 42px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
   }
@@ -294,25 +294,41 @@ transform: translate(-50%, -50%);
   }
   
   /* Address Section */
-    .address-container {
-		position: fixed; /* Ensures the container remains fixed in its position */
-		z-index: 1000;
-		top: 50%; /* Aligns the top of the container at the vertical center */
-		right: 1%; /* Aligns the container to the right side of the viewport */
-		transform: translateY(-50%); /* Centers the container vertically */
-		width: 370px; /* Adjust the width of the container as needed */
-		height: 200px; /* Set a fixed height for the container */
-		background-color: transparent; /* Specifies the background color of the container */
-		padding: 20px; /* Adds padding to the container content */
-		box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
-		/* You can add more styles here as needed */
-	}
-	.address-container h2{
-		color: #f7f4f4;
-	margin-left: auto;
+  .address-container {
+	position: fixed;
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 600px;
+	background: #222;
+	z-index: 1000;
+	align-items: center;
+	padding: 10px;
+	border-radius: 4px;
+	box-shadow: 0 10px 35px rgba(238, 236, 236, 0.9);
+
+  }
+  
+  .address-container h2 {
+	color: #f7f4f4;
 	margin-bottom: 20px;
-	}
-	.address-container p {
-		color:#ffffff;
-		margin-left: auto;
-	}
+  }
+  
+  .address-container p {
+	color: #a29f9f;
+	margin-bottom: 30px;
+  }
+
+
+  .section1
+{
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2px;
+	flex-wrap: wrap;
+	overflow: hidden;
+}
