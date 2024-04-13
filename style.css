@@ -76,7 +76,7 @@ section::before
 {
 	0%
 	{
-		transform: translateY(-100%);
+		transform: translateY(-10%);
 	}
 	100%
 	{
@@ -238,12 +238,15 @@ input[type="submit"]:active
 
   
   .contact-container {
-	width: 600px;
+	position: relative;
+	margin-top: 25px;
+	margin-left: 25px;
+	width: 500px;
 	background: #222;
 	z-index: 1000;
 	justify-content: center;
 	align-items: center;
-	padding: 50px;
+	padding: 40px;
 	border-radius: 4px;
 	box-shadow: 0 10px 35px rgba(238, 236, 236, 0.9);
 
@@ -259,14 +262,20 @@ input[type="submit"]:active
 	color: #a29f9f;
 	margin-bottom: 30px;
   }
-  
+
   .contact-form input,
   .contact-form textarea {
+	position: relative;
 	width: 100%;
-	padding: 10px;
-	margin-bottom: 20px;
-	border: 1px solid #0b0b0b;
-	border-radius: 5px;
+	background: #333;
+	margin-top: 5px;
+	border: none;
+	outline: none;
+	padding: 25px 10px 7.5px;
+	border-radius: 4px;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1em;
   }
   
   .contact-form button {
@@ -275,7 +284,8 @@ input[type="submit"]:active
 	padding: 10px 30px;
 	border: none;
 	border-radius: 5px;
-	margin-left: 360px;
+	margin-top: 10px;
+	margin-left: 284px;
 	cursor: pointer;
 	transition: background-color 0.3s ease;
   }
@@ -284,3 +294,26 @@ input[type="submit"]:active
 	background-color: #03731d;
   }
   
+  /* Address Section */
+    .address-container {
+		position: fixed; /* Ensures the container remains fixed in its position */
+		z-index: 1000;
+		top: 50%; /* Aligns the top of the container at the vertical center */
+		right: 1%; /* Aligns the container to the right side of the viewport */
+		transform: translateY(-50%); /* Centers the container vertically */
+		width: 370px; /* Adjust the width of the container as needed */
+		height: 200px; /* Set a fixed height for the container */
+		background-color: transparent; /* Specifies the background color of the container */
+		padding: 20px; /* Adds padding to the container content */
+		box-sizing: border-box; /* Ensures padding and border are included in the total width/height */
+		/* You can add more styles here as needed */
+	}
+	.address-container h2{
+		color: #f7f4f4;
+	margin-left: auto;
+	margin-bottom: 20px;
+	}
+	.address-container p {
+		color:#ffffff;
+		margin-left: auto;
+	}
